@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Unit Converter</string>
+    <string name="txtCurrency">Currency</string>
+    <string name="txtLength">Length</string>
+    <string name="txtWeight">Weight</string>
+    <string name="txtArea">Area</string>
+    <string name="txtTemperature">Temperature</string>
+    <string name="txtAmount">Enter Amount</string>
+    <array name="txtGroup">
+        <item>Euro</item>
+        <item>Peso</item>
+        <item>Canadian Dollar</item>
+        <item>Australian Dollar</item>
+        <item>Japanese Yen</item>
+        <item>Sol</item>
+        <item>United Arab Emirates Dirham</item>
+        <item>Turkish Lira</item>
+    </array>
+
+
+</resources>
