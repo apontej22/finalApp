@@ -3,19 +3,63 @@
     <string name="txtCurrency">Currency</string>
     <string name="txtLength">Length</string>
     <string name="txtWeight">Weight</string>
-    <string name="txtArea">Area</string>
-    <string name="txtTemperature">Temperature</string>
+    <string name="txtSpeed">Speed</string>
+    <string name="txtUSD">USD</string>
+    <string name="txtTitle2">Temperature</string>
     <string name="txtAmount">Enter Amount</string>
-    <array name="txtGroup">
-        <item>Euro</item>
-        <item>Peso</item>
-        <item>Canadian Dollar</item>
-        <item>Australian Dollar</item>
-        <item>Japanese Yen</item>
-        <item>Sol</item>
+    <string name="btnConvert">Convert</string>
+    <string name="txtResult"></string>
+    <string name="btnConvert2">Convert Temperature</string>
+    <string name="btnConvert3">Convert Length</string>
+    <string name="btnConvert4">Convert Weight</string>
+    <string name="btnConvert5">Convert</string>
+    <string name="txtTemperature">Enter Temperature</string>
+    <string name="rdCelToFa">Celsius To Fahrenheit</string>
+    <string name="rdFaToCel">Fahrenheit To Celsius</string>
+    <string name="txtNumber">Enter number</string>
+    <string name="txtTitle3">Convert Inches To:</string>
+    <string name="desCurrency">Money Symbol Image</string>
+    <string name="desLenght">Measure Tape Image</string>
+    <string name="desTemp">Thermometer Image</string>
+    <string name="desWeight">Scale Image</string>
+    <string name="desSpeed">Speedometer Image</string>
+    <array name="txtGroup1">
+        <item>Euros</item>
+        <item>Mexican Pesos</item>
+        <item>Canadian Dollars</item>
+        <item>Australian Dollars</item>
+        <item>Japanese Yens</item>
+        <item>Soles</item>
         <item>United Arab Emirates Dirham</item>
         <item>Turkish Lira</item>
     </array>
+    <string name="txtValue">Enter a Value</string>
+    <array name="txtGroup2">
+        <item>Inches</item>
+        <item>Feet</item>
+        <item>Yards</item>
+        <item>Centimeters</item>
+        <item>Meters</item>
+        <item>Kilometers</item>
+        <item>Miles</item>
+    </array>
+    <string name="txtMilesHr">Enter Miles/Hr</string>
+    <string name="txtMilesTo">Convert Miles/Hr To:</string>
+    <array name="txtGroup3">
+        <item>Miles per Hour</item>
+        <item>Foot per Second</item>
+        <item>Kilometer per Hour</item>
+        <item>Meters per Second</item>
+        <item>Knot</item>
+    </array>
+    <string name="btnConvertSpeed">Convert Speed</string>
+    <string name="txtPoundTo">Convert Pounds To:</string>
+    <string name="txtPound">Pounds</string>
+    <string name="txtOunce">Ounces</string>
+    <string name="txtGram">Grams</string>
+    <string name="txtKilograms">Kilograms</string>
+    <string name="txtTons">Tons</string>
+    <string name="txtMilligram">Milligrams</string>
 
 
 </resources>

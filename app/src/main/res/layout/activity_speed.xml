@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
-    tools:context=".Weight">
+    tools:context=".Speed">
 
     <TextView
-        android:id="@+id/txtWeight"
+        android:id="@+id/txtSpeed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -16,7 +16,8 @@
         android:layout_marginTop="52dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:text="@string/txtWeight"
+        android:gravity="center_horizontal"
+        android:text="@string/txtSpeed"
         android:textColor="@color/colorPrimary"
         android:textSize="36sp"
         android:textStyle="bold"
@@ -26,7 +27,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/txtValue"
+        android:id="@+id/txtMilesHr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -36,16 +37,16 @@
         android:layout_marginRight="8dp"
         android:ems="10"
         android:gravity="center_horizontal"
-        android:hint="@string/txtValue"
+        android:hint="@string/txtMilesHr"
         android:inputType="number"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtWeight" />
+        app:layout_constraintTop_toBottomOf="@+id/txtSpeed" />
 
     <TextView
-        android:id="@+id/txtFrom"
+        android:id="@+id/txtMilesTo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -53,77 +54,54 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:text="@string/txtPoundTo"
+        android:text="@string/txtMilesTo"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtValue" />
+        app:layout_constraintTop_toBottomOf="@+id/txtMilesHr" />
 
-    <CheckBox
-        android:id="@+id/chkBoxPound"
+    <Spinner
+        android:id="@+id/txtGroup3"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#B1DAC0"
+        android:entries="@array/txtGroup3"
+        android:gravity="center_horizontal"
+        android:popupBackground="#B1DAC0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMilesTo" />
+
+    <Button
+        android:id="@+id/btnConvertSped"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="36dp"
-
-        android:text="@string/txtPound"
-        app:layout_constraintEnd_toStartOf="@+id/chkBoxGram"
-        app:layout_constraintHorizontal_bias="0.247"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtFrom" />
-
-    <CheckBox
-        android:id="@+id/chkBoxOunce"
-        android:layout_width="wrap_content"
-        android:layout_height="34dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginTop="32dp"
-
-        android:text="@string/txtOunce"
-        app:layout_constraintEnd_toStartOf="@+id/chkBoxMilligram"
-        app:layout_constraintHorizontal_bias="0.256"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chkBoxPound" />
-
-    <CheckBox
-        android:id="@+id/chkBoxGram"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="96dp"
-        android:layout_marginRight="96dp"
-        android:text="@string/txtGram"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#009688"
+        android:text="@string/btnConvertSpeed"
+        android:textColor="#FFFFFF"
+        android:shadowRadius="70"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtFrom" />
-
-    <CheckBox
-        android:id="@+id/chkBoxKilo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="28dp"
-
-        android:text="@string/txtKilograms"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chkBoxOunce" />
-
-    <CheckBox
-        android:id="@+id/chkBoxMilligram"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="68dp"
-        android:layout_marginRight="68dp"
-        android:text="@string/txtMilligram"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chkBoxGram" />
+        app:layout_constraintTop_toBottomOf="@+id/txtGroup3" />
 
     <TextView
         android:id="@+id/txtResult"
@@ -140,44 +118,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnConvert4" />
+        app:layout_constraintTop_toBottomOf="@+id/btnConvertSped" />
 
-    <Button
-        android:id="@+id/btnConvert4"
-        android:layout_width="wrap_content"
-        android:layout_height="54dp"
+    <ImageView
+        android:id="@+id/imgSpeed"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="52dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:background="#009688"
-        android:shadowRadius="70"
-        android:shadowColor="@color/colorPrimaryDark"
-        android:shadowDx="4"
-        android:shadowDy="4"
-        android:text="@string/btnConvert4"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chkBoxKilo" />
-
-    <ImageView
-        android:id="@+id/imgScale"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginLeft="68dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:contentDescription="@string/desWeight"
-        app:layout_constraintEnd_toStartOf="@+id/txtWeight"
-        app:layout_constraintHorizontal_bias="1.0"
+        android:contentDescription="@string/desSpeed"
+        app:layout_constraintEnd_toStartOf="@+id/txtSpeed"
+        app:layout_constraintHorizontal_bias="0.965"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/scale" />
-
+        app:srcCompat="@drawable/speedometer" />
 </android.support.constraint.ConstraintLayout>

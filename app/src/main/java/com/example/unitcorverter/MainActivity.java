@@ -15,10 +15,14 @@ public class MainActivity extends ListActivity{
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_main);
 
-        String [] units = {"Currency", "Length", "Weight", "Temperature", "Area"};
-        setListAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, units));
-    }
 
+        String [] units = {"Currency", "Length",  "Temperature", "Weight", "Speed"};
+
+
+       setListAdapter(new ArrayAdapter<String>(this,R.layout.activity_main, R.id.textView,  units));
+
+
+     }
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
         switch (position){
@@ -30,15 +34,15 @@ public class MainActivity extends ListActivity{
                 break;
 
             case 2:
-                startActivity(new Intent(MainActivity.this, Weight.class));
-                break;
-
-            case 3:
                 startActivity(new Intent(MainActivity.this, Temperature.class));
                 break;
 
+            case 3:
+                startActivity(new Intent(MainActivity.this, Weight.class));
+                break;
+
             case 4:
-                startActivity(new Intent(MainActivity.this, Area.class));
+                startActivity(new Intent(MainActivity.this, Speed.class));
                 break;
         }
     }
